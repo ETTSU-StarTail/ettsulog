@@ -8,5 +8,6 @@
 - React
 - Gatsby
 - Strapi
-- Yarn
 - SQLite
+
+package manager: npm
