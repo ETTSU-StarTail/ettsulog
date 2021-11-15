@@ -10,4 +10,4 @@
 - Strapi
 - SQLite
 
-package manager: npm
+package manager: yarn
