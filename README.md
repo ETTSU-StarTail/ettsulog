@@ -3,8 +3,4 @@
 
 ## 構成
 - TypeScript
-- Gatsby
-- Strapi
 - SQLite
-- GraphQL
-- yarn
