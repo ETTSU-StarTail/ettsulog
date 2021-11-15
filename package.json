@@ -1,0 +1,32 @@
+{
+  "name": "weblog",
+  "version": "0.1.0",
+  "description": "blog",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ETTSU-StarTail/weblog.git"
+  },
+  "author": "ETTSU-StarTail <46245666+ETTSU-StarTail@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/ETTSU-StarTail/weblog/issues"
+  },
+  "homepage": "https://github.com/ETTSU-StarTail/weblog#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "web",
+    "react",
+    "gatsby",
+    "strapi",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "jamstack"
+  ]
+}
