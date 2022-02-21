@@ -5,10 +5,12 @@
 ## 構成
 
 - TypeScript
-- React
-- Gatsby
+- Svelte
+- SvelteKit
 - Strapi
 - SQLite
+
+React + Gatsby にしようとしたけど Svelte の方が頭でっかちだが好印象なので変えたよ。
 
 package manager: yarn
 
