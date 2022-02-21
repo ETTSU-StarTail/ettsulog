@@ -17,7 +17,7 @@ package manager: yarn
 ## インストールメモ
 
 - [ ] <del>nvm をインストール</del> Volta に変更。Windows ユーザなのでプラットフォーム問わないのはうれしい。
-- [ ] node.js 最新のメジャーバージョン、あれば LTS をインストール
+- [ ] node.js v14 系をインストール（Strapi 推奨）
 - [ ] yarn をインストール
 - [ ] `yarn init` を実行
 - [ ] gatsby-cli を依存パッケージでインストール
