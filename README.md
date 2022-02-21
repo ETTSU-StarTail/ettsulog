@@ -1,6 +1,6 @@
 # weblog
 
-自分用 blog
+自分用 blog もしくは blog テンプレート
 
 ## 構成
 
