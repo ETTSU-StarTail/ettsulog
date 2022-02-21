@@ -10,7 +10,7 @@
 - Strapi
 - SQLite
 
-React + Gatsby にしようとしたけど Svelte の方が頭でっかちだが好印象なので変えたよ。
+React + Gatsby にしようとしたけど Svelte の方が頭でっかちでしかないけど好印象なので変えたよ。
 
 package manager: yarn
 
