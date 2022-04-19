@@ -1,27 +1,47 @@
 # weblog
 
-自分用 blog もしくは blog テンプレート
+雑記ブログの開設の前段階としてブログ基盤を作ってみる。
+
+設計から実装、運営まで一貫してやりたい。Web デザインとかも含めるよ。
+
+まずは最低限、Web3 層構造で記事の CRUD できるようにする。
+
+## 構想メモ
+
+フロントエンドとバックエンドは API を通して JSON でやり取りする想定。
+やる気が有れば GraphQL も入れるかもしれない。
+
+仕様通りのデータがやり取りされればバックエンドもしくはフロントエンドを入れ替えてもいいような感じにしたい。
+
+運営も考えてブログ更新とかしやすいようにしたい。運営したことないのでわからんから最低限作って使ってみて追々かな。
 
 ## 構成
 
-- TypeScript
-- Svelte
-- SvelteKit
-- Strapi
-- SQLite
-
-React + Gatsby にしようとしたけど Svelte の方が頭でっかちでしかないけど好印象なので変えたよ。
-
-package manager: yarn
-
-## インストールメモ
-
-- [ ] <del>nvm をインストール</del> Volta に変更。Windows ユーザなのでプラットフォーム問わないのはうれしい。
-- [ ] node.js v14 系をインストール（Strapi 推奨）
-- [ ] yarn をインストール
-- [ ] `yarn init` を実行
-- [ ] gatsby-cli を依存パッケージでインストール
-- [ ] typescript を開発依存パッケージとしてインストール
-- [ ] `yarn install` を実行
-- [ ] `yarn create strapi-app weblog --quickstart` を実行
-- [ ] `yarn run gatsby new` を実行
+- 開発環境
+  - pyenv(-win): python バージョン管理
+  - poetry: python 仮想環境・パッケージ管理
+  - volta: nodejs/npm/yarn下位バージョン管理に使用する。
+  - nodejs: JavaScript 実行環境
+  - npm: nodejs パッケージ管理及びビルドツール
+- 言語
+  - python: 3 系
+  - Svelte: 使用感としてHTML スーパーセットでありコンパイルする為こちらに記述。TypeScript もそうでしょ？
+  - TypeScript: JavaScript に型システムを導入した JavaScript スーパーセット。
+- フレームワーク
+  - Fast API: Python の API サーバフレームワーク。API ドキュメントの自動生成が最初から備わってるのでこれで。
+  - SvelteKit: Svelte アプリケーションフレームワーク。SSR/SSG での使用を想定。ちゃんと使い方を知らないので現状はこの程度のコメントで。
+  - Pure CSS: 軽量でレスポンシブ対応されている CSS フレームワーク。最小限の恩恵を受けてカスタム CSS で独自性加えたいというニーズに合いそうだった。
+  - Open-Props: ユーティリティファースト CSS フレームワーク。Tailwind CSS とは違って**ユーティリティ変数**を提供する。カスタム CSS の共通で使う値の定義に使えそうだったので選出。まだ若いけど v1.0.0 にはなっているので形になっているってことで良いと思ってる。
+- DB
+  - SQLite3: まずはバックアップも簡単なこいつで。
+  - Maria DB: 色々必要になったら。 
+- CMS
+  - Strapi: 暫定のヘッドレス CMS だが、Fast API + DB で管理しづらいかしら。
+- その他
+  - 設計
+    - Adobe XD: Figma とも思ったけどサブスクリプション有るのでこっちの方が制限が無い。業務でも勝手に使い始めたので知識深めるために使っていく。ドキュメントには URL と画像？
+  - CI/CD
+    - Dagger: CI/CD 開発キットとやらを使ってみたい。
+  - ドキュメンテーション
+    - Sphinx: コードの仕様は基本的に自動生成にしたい。欲しい PDF 出力にするには LaTeX 思い出さないとなと。
+    - VivlioStyle: 設計書とかマニュアルとかコードに依存しない部分はこれで作るかなぁ。
